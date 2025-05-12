@@ -1,0 +1,442 @@
+:root{
+    --text_hover-color: rgb(255,152,0);
+    --background_button-color: rgb(255,152,0);
+    --text-color: white;
+    --background-color: rgb(255,152,0);
+}
+#admin{
+    background-color: rgb(83, 40, 40);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.a-style-navigation{
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#navigation {
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    width: 100%;
+    margin: 0, 80px;
+    padding: 0, 15px;
+    color: white;
+}
+
+.navigation--topbar{
+    padding: 10px 0px;
+}
+
+.navigation--custom-btn{
+    float: right;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-align: center;
+    background-color: var(--background_button-color);
+}
+
+.navigation--topbar-info{
+    font-size: 20px;
+    display: inline-flex;
+}
+
+.email{
+    display: inline-flex;
+    padding-left: 30px;
+}
+
+.phonenumber{
+    display: inline-flex;
+    border-right: rgb(247, 244, 244) solid 0.5px;
+    padding-right: 30px;
+}
+
+.navbar-header > button{
+    display: none;
+}
+.bi-telephone-fill,.bi-envelope-fill{
+    margin-right: 20px;
+}
+
+.navigation--topbar-social,.navigation--topbar-social a{
+    display: inline-flex;
+    float: right;
+    margin-left: 10px;
+}
+
+.navigation--navbar{
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    justify-content: space-between; /* Đẩy các phần tử ra hai đầu */
+}
+
+.clearfix{
+    display: flex;
+    justify-content: space-between;
+    border-top: rgb(243, 238, 238) solid 1px;
+}
+
+#NavigationNav {
+    position: relative;
+    display: inline-block; 
+    visibility: visible; 
+    /* flex: 1;  */
+    /* order: 2;  */
+}
+
+.navbar-header {
+    margin-right: 20px; 
+}
+
+.navbar-nav {
+    float: right;
+    margin-top: 30px;
+}
+
+.navbar-nav li{
+    display: inline;
+    list-style-type: none; 
+    padding: 20px 10px; 
+    margin: 0;
+}
+
+.dropdowns{
+    position: relative;
+    visibility: visible; 
+}
+
+.dropdowns-menu {
+    display: none; 
+    position: absolute; 
+    z-index: 15;
+    top: 100%; 
+    left: 0;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    max-width: max-content;
+    white-space: nowrap;
+}
+.dropdowns-menu li{
+    display: block;
+    padding: 15px 20px; 
+    margin: 0;
+}
+
+.dropdowns-menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-nav li:hover > a{
+    color: var(--text_hover-color);
+}
+
+.dropdowns:hover .dropdowns-menu {
+    display: block; 
+}   
+
+.dropdowns-menu li:hover a{
+    color: var(--text_hover-color);
+}
+
+/* Heard */
+#header{
+    height: 100vh;
+    /* margin-top: -165px; */
+    top: 0px;
+    background: url(../img/background.jpg) center/cover no-repeat;
+}
+
+.header--content1, .header--content2,.header--content3{
+    position: relative;
+    top: 650px;
+    left: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    align-items: center;    
+    width: 100%;
+}
+
+.slide{
+    max-width: 100px;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.header--content1{
+    z-index: 1;
+}
+
+.header--content2{
+    z-index: 2;
+}
+
+.header--content3{
+    z-index: 3;
+}
+
+
+.header-content > h2{
+    text-align: left;
+    padding: 20px 0 0 30px;
+    float: left;
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+    border-left: 10px solid var(--text_hover-color);
+}
+
+h2 > span{
+    opacity: 0.5;
+}
+
+.header-content > p{
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 0 10px 30px;
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-left: 10px solid #fff;
+}
+
+.header-grid--list {
+    padding: 20px 30px; /* Khoảng cách bên trái và bên phải */
+    text-align: left;
+    list-style: none; /* Bỏ dấu chấm mặc định */
+    display: grid; /* Sử dụng Grid */
+    grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột */
+    margin: 0; /* Bỏ khoảng cách trên và dưới */
+}
+
+.header-grid--list > li {
+    padding: 10px 0px; /* Khoảng cách bên trái và bên phải */
+    font-size: 18px;
+    position: relative; /* Để định vị dấu chấm */
+    padding-left: 25px; /* Khoảng cách bên trái cho văn bản */
+}
+
+.header-grid--list > li::before {
+    content: ''; 
+    position: absolute; /* Định vị tuyệt đối */
+    left: 0; /* Vị trí bên trái */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn giữa chính xác */
+    width: 10px; /* Đường kính dấu chấm */
+    height: 10px; /* Đường kính dấu chấm */
+    border: 3px solid yellow; /* Viền màu vàng */
+    border-radius: 50%; /* Hình tròn */
+    background-color: transparent; /* Nền trong suốt */
+}
+
+.button_content{
+    float: left;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--background_button-color);
+}
+
+.vc-child{
+
+    display: inline-block;
+    width: 100%;
+    height: 80vh;
+    padding: 0px 15px;
+}
+
+
+#domainSearch{
+    height: 240px;
+    background-color: var(--background-color);
+}
+
+
+#customers{
+    height: 600px;
+}
+
+#Services{
+    height: 550px;
+}
+
+.extension{
+    color: #fff;
+    font-size: 20px;
+}
+
+.domainSearch--content, .domainSearch--content .row{
+    height: 100%;
+    align-items: center;
+}
+
+.domainSearch--content > .row > .col-1{
+    padding: 0px 15px;
+}
+
+.domainSearch--content > .row > .col-5 > input{
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+    padding: 4px 0;
+    float: right;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.domain-input select{
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 0px 15px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    background-color: transparent;
+}
+
+.newExtension button{
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 15px;
+    width: 120%;
+    height: 50px;
+    padding: 0px 25px;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+#customers{
+    padding-top: 80px;
+    background-color: #fff;
+}
+
+.customers--content{
+    
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%; /* Chiều rộng tối đa cho màn hình di động */
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 720px; /* Chiều rộng tối đa cho màn hình tablet */
+    }
+}
+
+/* PC */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1400px !important; /* Chiều rộng tối đa cho màn hình lớn */
+    }
+
+    @media (min-width: 1800px) {
+        .container {
+            max-width: 1800px !important; /* Chiều rộng tối đa cho màn hình rất lớn */
+        }
+    }
+
+    @media (min-width: 1800px) {
+        .container {
+            max-width: 1800px !important; /* Chiều rộng tối đa cho màn hình cực lớn */
+        }
+
+        #NavigationNav {
+            flex: 1;  
+            order: 2; 
+        }
+
+        .navbar-header {
+            order: 1; 
+        }
+
+        .navigation--custom-btn {
+            order: 3; 
+        }
+    }
+}
+
+
+
+
+
+/* ANIMATION CSS */
+
+.owl-fadeInUp img{
+    animation: fadeInUp 3s ease-in-out forwards; 
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translatey(-50px); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0px); 
+        opacity: 1;
+    }
+}
+
+.header-content{
+    animation: fadeIndown 3s ease-in-out forwards; 
+    opacity: 0; 
+}
+
+@keyframes fadeIndown{
+    0% {
+        transform: translatey(50px); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0px); 
+        opacity: 1; 
+    }
+}
+
