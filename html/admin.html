@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="../assets/css/admin.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Gonstack</title>
     <link rel="icon" href="../assets/img/logo@2x1.png" type="image/x-icon">
+    <script src="../assets/js/admin.js"></script>
 </head>
 <body id = "admin">
     <div id="navigation">
@@ -83,49 +85,133 @@
         </div>    
     </div>
     <div id="header">
-        <div class="container">
-            <div class="row header--content1">
+        <div class="container slide">
+            <!-- Slide 1 -->
+            <div class="row header--content active">
                 <div class="col-6 vc-child">
                     <section class="header-content">
                         <h2 class="owl-fadeInUp animate-2x">Simple 
                             <span>Storage</span>
                         </h2>
-                        <p>Gonstack là một nền tảng điện toán đám mây cung cấp các dịch vụ máy chủ ảo, lưu trữ và mạng riêng ảo (VPN) cho doanh nghiệp và cá nhân.</p>
+                        <p>Giải pháp lưu trữ tương thích giao thức S3.</p>
+                        <ul class="header-grid--list">
+                            <li>Giải pháp lưu trữ tương thích giao thức S3.</li>
+                            <li>Độ an toàn cao</li>
+                            <li>Quản trị linh động</li>
+                            <li>Giá thành hợp lý</li>
+                        </ul>
+                        <button id="" class="button_content">Xem chi tiết</button>
                     </section>
                 </div>
                 <div class="col-6 header--img header-img owl-fadeInUp">
                     <img src="../assets/img/slider-img-02@2x.png" alt="" class="img-responsive">
                 </div>
             </div>
-            <div class="row header--content2">
-                <div class="col-6 header--img">
-                    <img src="../assets/img/slider-img-02@2x.png" alt="" class="img-responsive">
-                </div>
+            <!-- Slide 2 -->
+            <div class="row header--content">
                 <div class="col-6 vc-child">
                     <section class="header-content">
-                        <h1>Gonstack</h1>
-                        <p>Gonstack là một nền tảng điện toán đám mây cung cấp các dịch vụ máy chủ ảo, lưu trữ và mạng riêng ảo (VPN) cho doanh nghiệp và cá nhân.</p>
+                        <h2 class="owl-fadeInUp animate-2x">Simple 1
+                            <span>Storage</span>
+                        </h2>
+                        <p>Giải pháp lưu trữ tương thích giao thức S3.</p>
+                        <ul>
+                            <li>Giải pháp lưu trữ tương thích giao thức S3.</li>
+                            <li>Độ an toàn cao</li>
+                            <li>Quản trị linh động</li>
+                            <li>Giá thành hợp lý</li>
+                        </ul>
+                        <button id="" class="button_content">Xem chi tiết</button>
                     </section>
+                </div>
+                <div class="col-6 header--img header-img owl-fadeInUp">
+                    <img src="../assets/img/slider-img-02@2x.png" alt="" class="img-responsive">
                 </div>
             </div>
-            <div class="row header--content3">
+            <!-- Slide 3 -->
+            <div class="row header--content">
                 <div class="col-6 vc-child">
                     <section class="header-content">
-                        <h1>Gonstack</h1>
-                        <p>Gonstack là một nền tảng điện toán đám mây cung cấp các dịch vụ máy chủ ảo, lưu trữ và mạng riêng ảo (VPN) cho doanh nghiệp và cá nhân.</p>
+                        <h2 class="owl-fadeInUp animate-2x">Simple 2
+                            <span>Storage</span>
+                        </h2>
+                        <p>Giải pháp lưu trữ tương thích giao thức S3.</p>
+                        <ul>
+                            <li>Giải pháp lưu trữ tương thích giao thức S3.</li>
+                            <li>Độ an toàn cao</li>
+                            <li>Quản trị linh động</li>
+                            <li>Giá thành hợp lý</li>
+                        </ul>
+                        <button id="" class="button_content">Xem chi tiết</button>
                     </section>
                 </div>
-                <div class="col-6 header--img">
+                <div class="col-6 header--img header-img owl-fadeInUp">
                     <img src="../assets/img/slider-img-02@2x.png" alt="" class="img-responsive">
                 </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="slide-navigation">
+                <button class="nav-btn" data-slide="1"></button>
+                <button class="nav-btn" data-slide="2"></button>
+                <button class="nav-btn" data-slide="3"></button>
             </div>
         </div>
     </div>
     <div id="domainSearch">
-
+        <div class="container domainSearch--content">
+            <div class="row">
+                <div class="col-1 extension">
+                    <span>.com</span>
+                    <span>299.000đ/năm</span>
+                </div>
+                <div class="col-1 extension">
+                    <span>.net</span>
+                    <span>315.000đ/năm</span>
+                </div>
+                <div class="col-1 extension">
+                    <span>.org</span>
+                    <span>349.000đ/năm</span>
+                </div>
+                <div class="col-1 extension">
+                    <span>.vn</span>
+                    <span>660.000đ/năm</span>
+                </div>
+                <div class="col-1 extension">
+                    <span>.com.vn</span>
+                    <span>550.000đ/năm</span>
+                </div>
+                <div class="col-5">
+                    <input type="text" name="domain" placeholder="Nhập tên miền bạn muốn đăng ký tại đây">
+                </div>
+                <div class="col-1">
+                    <div class="domain-input">
+                        <select>
+                            <option value=".com">.com</option>
+                            <option value=".net">.net</option>
+                            <option value=".org">.org</option>
+                            <option value=".vn">.vn</option>
+                            <option value=".com.vn">.com.vn</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-1 newExtension">
+                    <button>Sắp ra mắt</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="customers">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-3 customers--content">
+                    <span>Được tin dùng bởi</span>
+                    <h2 class="section-title">Các doanh nghiệp lớn</h2>
+                </div>
+                <div class="col-9 customers--img">
+                    <img src="../assets/img/customers.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
     </div>
     <div id="Services">
 
@@ -149,4 +235,4 @@
     </footer>
     
 </body>
-</html>
+</html> 
